@@ -1,8 +1,8 @@
 /**
- * 库的摘要信息
+ * 上传视图控制器
  * 
  * @remarks
- * 库的说明信息
+ * 基本 by-uploader 上传视图控制器，这是 MVC 模式中的 C ，即 控制器，用于连接 M 数据 和 V 视图的，它提供了一种更方便地接入类似 React 和 Vue 等组件的方案。
  * 
  * @packageDocumentation
  */
@@ -15,20 +15,43 @@
   * 绑定选项
   */
  export interface IBindOptions<F extends UpFile = UpFile> {
+    /**
+     * 更新文件列表的回调函数
+     */
    setFileList?: (files: F[]) => void;
+   /**
+    * 更新进度的回调函数
+    */
    setProgress?: (progress: number) => void;
+   /**
+    * 更新总尺寸的回调函数
+    */
    setTotalSize?: (size: number) => void;
+   /**
+    * 更新已上传尺寸的回调函数
+    */
    setUploadedSize?: (size: number) => void;
+   /**
+    * 记录更新变代的id
+    */
    setChangeId?: (id: number) => void;
  }
  
+ /**
+  * appendFiles 函数的选项
+  */
  export interface AppendFilesOptions extends OpenFilesOptions {
    // 给文件对像添加额外的属性
    extra?: any;
  }
  
+ /**
+  * 上传视图控制器
+  */
  export interface IUploadViewController<F extends UpFile = UpFile> {
-   // ByUploader 实例，用于上传的
+   /**
+    * ByUploader 实例，用于上传的
+    */
    uploader: ByUploader;
  
    /**
@@ -70,7 +93,7 @@
   * 绑定 ByUploader 和 业务数据
   * @param uploader
   * @param options
-  * @returns
+  * @returns 返回上传视图控制器
   */
  export function bindUploader<F extends UpFile = UpFile>(
    uploader: ByUploader,
@@ -145,7 +168,7 @@
    }
  
    /**
-    * 开始上传文件
+    * 开始上传所有的文件
     */
    function uploadAll() {
      return uploader.start();
@@ -170,8 +193,9 @@
    };
  }
  
+
  /**
-  * 创建上传视图模型
+  * 创建上传视图控制器
   */
  export function createUploadViewController(options: IBindOptions) {
    const uploader = new ByUploader();

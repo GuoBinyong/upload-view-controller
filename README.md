@@ -11,25 +11,23 @@
 
 > 目录
 
-- [1. 背景](#1-背景)
-- [2. 简介](#2-简介)
-- [3. 安装方式](#3-安装方式)
-  - [3.1. 方式1：通过 npm 安装](#31-方式1通过-npm-安装)
-  - [3.2. 方式3：通过`<script>`标签引入](#32-方式3通过script标签引入)
-- [4. 教程](#4-教程)
-- [5. API接口文档](#5-api接口文档)
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=true} -->
+
+<!-- code_chunk_output -->
+
+1. [简介](#简介)
+2. [安装方式](#安装方式)
+    1. [方式1：通过 npm 安装](#方式1通过-npm-安装)
+    2. [方式3：通过`<script>`标签引入](#方式3通过script标签引入)
+3. [教程](#教程)
+4. [API接口文档](#api接口文档)
+
+<!-- /code_chunk_output -->
 
 
+# 简介
+upload-view-controller 是基本 by-uploader 上传视图控制器，这是 MVC 模式中的 C ，即 控制器，用于连接 M 数据 和 V 视图的，它提供了一种更方便地接入类似 React 和 Vue 等组件的方案
 
-# 1. 背景
-
-# 2. 简介
-库的简单介绍
-
-**具有以下特性：**  
-- 特性1
-- 特性2
-- 特性3
 
 **详情请看：**  
 - 主页：<https://github.com/GuoBinyong/upload-view-controller>
@@ -50,11 +48,11 @@
 
 
 
-# 3. 安装方式
+# 安装方式
 目前，安装方式有以下几种：
 
 
-## 3.1. 方式1：通过 npm 安装
+## 方式1：通过 npm 安装
 ```
 npm install upload-view-controller
 ```
@@ -62,7 +60,7 @@ npm install upload-view-controller
 
 
 
-## 3.2. 方式3：通过`<script>`标签引入
+## 方式3：通过`<script>`标签引入
 您可直接从项目的 [发行地址][] 中下载以 `.iife.js` 作为缀的文件，然后使用如下代码引用 和 使用 upload-view-controller：
 
 
@@ -71,17 +69,17 @@ npm install upload-view-controller
    <script src="path/to/package/upload-view-controller.iife.js"></script>
    ```
    
-2. 使用全局的 `upload-view-controller`
+2. 使用全局的 `UploadViewController`
    ```
    <script>
-   // 使用全局的 upload-view-controller
+   // 使用全局的 UploadViewController
    </script>
    ```
 
-# 4. 教程
+# 教程
 详情跳转至[教程][]
 
-# 5. API接口文档
+# API接口文档
 详情跳转至[API接口文档][]
 
 
