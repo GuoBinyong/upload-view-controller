@@ -55,7 +55,7 @@
     "vite": "^3.0.9"
   },
   "dependencies": {
-    "by-uploader": "workspace:^1.4.4",
+    "by-uploader": "workspace:^1.7.0",
     "web-tls": "workspace:^1.0.0"
   }
 }
