@@ -4,6 +4,12 @@
 
 ## upload-view-controller package
 
+上传视图控制器
+
+## Remarks
+
+基本 by-uploader 上传视图控制器，这是 MVC 模式中的 C ，即 控制器，用于连接 M 数据 和 V 视图的，它提供了一种更方便地接入类似 React 和 Vue 等组件的方案。
+
 ## Functions
 
 |  Function | Description |
@@ -18,16 +24,4 @@
 |  [AppendFilesOptions](./upload-view-controller.appendfilesoptions.md) | appendFiles 函数的选项 |
 |  [IBindOptions](./upload-view-controller.ibindoptions.md) | 绑定选项 |
 |  [IUploadViewController](./upload-view-controller.iuploadviewcontroller.md) | 上传视图控制器 |
-|  [TaskManagerOptions](./upload-view-controller.taskmanageroptions.md) | TaskManager 构建选项 |
-|  [TaskPoolOptions](./upload-view-controller.taskpooloptions.md) | TaskPool 的构造函数选项 |
-
-## Type Aliases
-
-|  Type Alias | Description |
-|  --- | --- |
-|  [GetTask](./upload-view-controller.gettask.md) | 获取要执行的任务 |
-|  [PoolEmptied](./upload-view-controller.poolemptied.md) | 任务池清空的回市函数 |
-|  [TaskCompleted](./upload-view-controller.taskcompleted.md) | 任务完成的回调函数 |
-|  [TaskExecutor](./upload-view-controller.taskexecutor.md) |  |
-|  [TaskIteratorResult](./upload-view-controller.taskiteratorresult.md) | 任务迭代结果 |
 

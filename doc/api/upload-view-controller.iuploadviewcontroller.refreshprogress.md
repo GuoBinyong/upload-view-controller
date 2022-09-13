@@ -10,10 +10,10 @@
 
 ```typescript
 refreshProgress(): {
-		total: number;
-		uploaded: number;
-		progress: number;
-	};
+        total: number;
+        uploaded: number;
+        progress: number;
+    };
 ```
 <b>Returns:</b>
 
