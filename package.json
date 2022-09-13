@@ -1,6 +1,6 @@
 {
   "name": "upload-view-controller",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "upload-view-controller 是基本 by-uploader 上传视图控制器，这是 MVC 模式中的 C ，即 控制器，用于连接 M 数据 和 V 视图的，它提供了一种更方便地接入类似 React 和 Vue 等组件的方案",
   "main": "dist/upload-view-controller.umd.js",
   "module": "dist/upload-view-controller.mjs",
